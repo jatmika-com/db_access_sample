@@ -43,6 +43,12 @@ namespace db_access_sample
         catch(Exception ex)
         {
           await context.Response.WriteAsync(ex.Message);
+          await context.Response.WriteAsync("\r\n");
+          await context.Response.WriteAsync(ex.StackTrace);
+          await context.Response.WriteAsync("\r\n");
+          await context.Response.WriteAsync(ex.InnerException.Message);
+          await context.Response.WriteAsync("\r\n");
+          await context.Response.WriteAsync(ex.InnerException.StackTrace);
         }
       });
     }
