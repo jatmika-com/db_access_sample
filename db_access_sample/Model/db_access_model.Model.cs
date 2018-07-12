@@ -46,7 +46,7 @@ namespace app_global
       {
         if (!optionsBuilder.IsConfigured)
         {
-          optionsBuilder.UseMySql("Server=localhost;Port=30000;Database=db_access_test;Uid=db_access_user;Pwd=db_access_password;");
+          optionsBuilder.UseMySql("Server=localhost;Port=30000;Database=db_access_test;Uid=db_access_user;Pwd=db_access_password;"); //change this connection properties according to yours
           CustomizeConfiguration(ref optionsBuilder);
           base.OnConfiguring(optionsBuilder);
         }
