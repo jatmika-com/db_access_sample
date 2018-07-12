@@ -1,0 +1,5 @@
+﻿add :
+dotnet ef migrations add alpha_01 --context "Model" 
+
+remove :
+dotnet ef migrations remove --context "Model" 

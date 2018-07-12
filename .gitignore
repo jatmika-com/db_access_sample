@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/db_access_sample/Model/db_access_model.efml
+/db_access_sample/Model/db_access_model.edps
+/db_access_sample/Model/db_access_model.Diagram1.view
